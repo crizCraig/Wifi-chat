@@ -1,0 +1,43 @@
+/** {font-family: 'Open Sans', sans-serif !important;}*/
+
+html, body {margin-top: 0;}
+
+
+.container {
+  margin-left: 20px;
+  margin-top: 0px;
+  border-right: solid 1px #eee;
+  width: 97%;
+  /*box-shadow: 50px -100px 50px #f0f0f0;*/
+}
+
+h1 {
+  background: #fff;
+  margin-top: 0;
+  padding-top: 15px;
+  padding-bottom: 8px;
+  color: #4169e1;
+  font-size: 120%;
+}
+
+/*.num-people {color: hsl(225, 72%, 32%);}*/
+
+.message-line {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.message-line .name {
+  font-weight: normal;
+  width: 5px;
+  padding-right: 10px;
+  color: hsl(225, 10%, 50%);
+}
+
+/*.message-line .message {opacity: 0.9}*/
+.messages {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+input {width: 99%;}

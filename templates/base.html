@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Default title{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Le styles -->
+  <link href="/static/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link href="/static/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="/static/css/font-awesome.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/static/css/main.css?{{ APP_VERSION }}" />
+
+  <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+
+<body>
+
+
+  <div class="container">
+    {% block body %}{% endblock %}
+  </div>
+
+  <!-- Le javascript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script>
+    window.chatByIpToken = '{{ token }}';
+  </script>
+  <script src="/static/js/lib.js"></script>
+  <script type="text/javascript" src="/static/js/urlize.js"></script>
+  <script type="text/javascript" src="/_ah/channel/jsapi"></script>
+  <script src="/static/js/main.js?{{ APP_VERSION }}"></script>
+  {% block bottom %}{% endblock %}
+</body>
+</html>

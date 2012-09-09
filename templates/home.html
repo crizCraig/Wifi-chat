@@ -1,0 +1,22 @@
+{% extends "templates/base.html" %}
+{% block title %}{% endblock %}
+{% block body %}
+  <!--<h1>-->
+    <!--Chatting securely with-->
+    <!--<span class="num-people">{{num_people}}</span>-->
+    <!--on your local network.-->
+  <!--</h1>-->
+  <h1>
+    Chatting securely with
+    people
+    on your local network.
+  </h1>
+
+  <div class="messages"></div>
+  <form action="/message" method="POST">
+    <input type="text" placeholder="Enter text here"/>
+  </form>
+{% endblock %}
+
+{% block bottom %}
+{% endblock %}
